@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <title> Login | Orghub </title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- cusotm CSS -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-float-label.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <!-- <header class="header">
+  <nav class="navbar navbar-expand-md navbar-dark ">
+    <div class="container">
+      <div class="row row-100 col-header">
+        <div class="col-lg-3 col-12 col-30">
+          <a class="navbar-brand smoth-scroll" href="dashbaord.html"><img src="assets/images/logo.png" alt="" /></a>
+        </div>
+        <div class="col-lg-9 col-12 col-70">
+          <button class="navbar-toggler" onclick="openNav2()" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-group">
+            <div class="collapse1 navbar-collapse sidenav-new-menu nav-full-menu " id="mySidenav2">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><img src="assets/images/close-menu.png" alt=""/></a>
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll active" href="add-new-shipment.html">New Shipment</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="overview.html">Overview</a>
+                </li>
+              
+                
+              </ul>
+            </div>
+            <div class="dropdown dropdown-user">
+                    <a href="#" data-toggle="dropdown" data-caret="false" class="dropdown-toggle">
+                        <span class="avtar">
+                            <img src="assets/images/avatar.jpg" alt="">
+                        </span>
+                        Jhon
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      
+                      <ul>
+                        <li>
+                          <a class="dropdown-item  py-2" href="#">
+                            <span class="fe fe-user mr-2"></span> Edit Profile
+                        </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item  py-2" href="#">
+                            <span class="fe fe-log-out mr-2"></span> Logout
+                        </a>
+                        </li>
+                      </ul>
+                        
+                        
+                        
+                    </div>
+            </div>
+          </div>
+        
+
+          <div id="cd-shadow-layer" onclick="closeNav2()" style="display: none;"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+</header> -->
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0 middle-section middle-authentication mt-0 ">
+    <div class="middle-inner">
+
+      <div class="authentication-box">
+        <div class="authentication-box-inner">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-lg-8 col-md-9">
+                <div class="content-box">
+                  <div class="login-header">
+                    <a href="#!">
+                      <img src="assets/images/logo.png" class="login-logo" alt="">
+                    </a>
+                  </div>
+
+                  <div class="login-body">
+
+                    <div class="title">
+                      <h3>Sign In</h3>
+                    </div>
+
+
+                    <form>
+                      <div class="form-group  focus-none">
+                        <label for="">Email</label>
+                          <div class="input-group">
+                            <input class="form-control" type="email" placeholder="Enter email">
+                            <div class="input-group-addon">
+                              <a href="#">
+                                <i class="fe fe-mail"></i>
+                              </a>
+                          </div>
+                        </div>
+                        <span class="invalid-feedback">Invalid Passowrd</span>
+                      </div>
+                   
+
+
+                      <div class="form-group  focus-none">
+                        <label for="">Password</label>
+                          <div class="input-group">
+                            <input class="form-control" type="password" placeholder="Enter password">
+                            <div class="input-group-addon">
+                              <a href="#">
+                                <i class="fe fe-eye-off"></i>
+                              </a>
+                          </div>
+                        </div>
+                        <span class="invalid-feedback">Invalid Passowrd</span>
+                      </div>
+
+                      <div class="form-group forgot-pass">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <label class="custom-control-label" for="customCheck">Remember me</label>
+                        </div>
+
+                        <a href="#!" class="forgot-link">Forgot password?</a>
+                      </div>
+
+                      <div class="login-action">
+                        <a href="#!" class="btn btn-primary btn-100">Sign in</a>
+                      </div>
+
+
+                     
+
+                    </form>
+                  </div>
+
+                  <div class="login-footer">
+                    <p>Don’t have an account? <a href="signup.html">Sign up</a></p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- end page content -->
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <script>
+
+    $('input').bind('blur', function () {
+      $(this).parent().removeClass('focus-hover').addClass('focus-none');
+    });
+    $('input').bind('focus', function () {
+      $(this).parent().removeClass('focus-none').addClass('focus-hover');
+    });
+
+
+  </script>
+</body>
+
+</html>
