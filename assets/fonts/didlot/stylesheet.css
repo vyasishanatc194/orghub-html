@@ -1,7 +1,11 @@
 @font-face {
-    font-family: 'Didot-LT-Std';
-    src: url('DidotLTStd-Bold.woff2') format('woff2'),
-        url('DidotLTStd-Bold.woff') format('woff');
+    font-family: 'Didot';
+    src: url('Didot-Bold.eot');
+    src: url('Didot-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Didot-Bold.woff2') format('woff2'),
+        url('Didot-Bold.woff') format('woff'),
+        url('Didot-Bold.ttf') format('truetype'),
+        url('Didot-Bold.svg#Didot-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

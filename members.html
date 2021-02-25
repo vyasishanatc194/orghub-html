@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <title> Members | Orghub </title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- cusotm CSS -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-float-label.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100 admin-page">
+
+    <header class="header">
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <div class="row row-100 col-header nav-row">
+            <div class="logo-div">
+              <a class="navbar-brand smoth-scroll" href="index.html"><img src="assets/images/logo-admin.png" alt="" /></a>
+            </div>
+            <div class="nav-div">
+              <button class="navbar-toggler" onclick="openNav1()" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="admin-header">
+                <div class="logo-admin-header">
+                  <a href="admin-dashboard.html">
+                    <img src="assets/images/Logo-footer.png" alt="">
+                  </a>
+                </div>
+                
+                <div class="company-name header-search-bar">
+                  <div class="input-group mb-0">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><a href="#!"><i class="fe fe-search"></i></a></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for groups and members" >
+                  </div>
+                </div>
+         
+                <div class="admin-profile">
+
+          
+                
+                <!-- user profile -->
+                  <div class="user-profile">
+                    <div class="dropdown user-dropdown">
+                      <a class="profile-option dropdown-toggle" href="#"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/profile-pic.png" alt=""/> <span>John Doe</span>
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        
+                        <a class="dropdown-item" href="index.html"><span class="img-menu"><img src="assets/images/icons/logout.svg" alt=""></span>Logout</a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- end user profile -->
+
+                </div>
+              </div>
+               
+              <div id="cd-shadow-layer" onclick="closeNav1()" style="display: none;"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <div class="left-sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()"><img src="assets/images/close-menu.png" alt=""/></a>
+      <div class="left-sidenav-inner">
+ 
+        <div class="nav-div">
+          <div class="sidenav mb-4">
+        
+            <div class="side-nav-item accordion " id="menu-collapse">
+              <ul>
+
+                
+                <li class="nav-item ">
+                  <a class="nav-link nav-toggle active" href="#!">
+                    <span class="icon-nav menu-icon icon-dashbaord" >
+                    </span>
+                    <span class="text-collaps-menu">Groups</span>
+                  </a>
+                </li> 
+
+
+                <li class="nav-item ">
+                  <a class="nav-link nav-toggle " href="#!">
+                    <span class="icon-nav menu-icon icon-setting" >
+                    </span>
+                    <span class="text-collaps-menu">Settings</span>
+                  </a>
+                </li>
+
+                
+                <li class="nav-item ">
+                  <a class="nav-link nav-toggle active nav-group" href="#category-three" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="category-three">
+                   Group 1
+                  </a>
+                  <div class="collapse show" id="category-three" style="" data-parent="#menu-collapse">
+                    <ul class="nav sub-nav ">
+                      <li class="nav-item ">
+                        <a class="nav-link nav-toggle active" href="#!">
+                          <span class="icon-nav menu-icon icon-members" >
+                          </span>
+                          <span class="text-collaps-menu">Members</span>
+                        </a>
+                      </li>
+                      
+                   
+
+                  </ul>
+                  </div>
+                </li>
+
+           
+              </ul>
+            </div>
+            <div class="link-footer">
+              <ul>
+                
+               
+  
+  
+          
+                <li class="nav-item ">
+                  <a class="nav-link nav-toggle " href="#!">
+                    <span class="icon-nav menu-icon icon-logout" >
+                    </span>
+                    <span class="text-collaps-menu">Logout</span>
+                  </a>
+                </li> 
+
+
+
+           
+          
+              </ul>
+            </div>
+          </div>  
+
+   
+        </div>
+      </div>
+    </div>
+    
+    <main role="main" class="flex-shrink-0 middle-section middle-admin dashboard sidemenu-open-main">
+      <div class="middle-inner">
+  
+       
+        <section class="project-lisitng-section ">
+          <div class="project-lisitng-inner">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                  <div class="card card-admin border-0 mb-4">
+                    <div class="card-header border-0">
+                      <div class="title">
+                        <h3>Members</h3>
+                      </div>
+                      <div class="action-groups">
+                        <ul>
+                        
+                          <li>
+                            <a href="#" class="roate-90">
+                              <span class="material-icons">
+                                sync_alt
+                                </span>
+                            </a>
+                          </li>
+                         
+                        
+                        </ul>
+                        <div class="add-project">
+                          <a href="#!" class="btn btn-primary" data-toggle="modal" data-target="#create-project">+Add Group</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="members-list">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Name</th>
+                                    <th>Member Since</th>
+                                    <th>Actions</th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                     <div class="profile-info">
+                                       <div class="profile-img">
+                                         <img src="assets/images/profile-pic.png" alt="">
+                                       </div>
+                                       <div class="profile-name">
+                                        <h3>John Doe</h3>
+                                       </div>
+                                     </div>
+                                    </td>
+                            
+                                    <td>
+                                      28 Aug, 2020
+                                    </td>
+                                 
+                                    <td>
+                                      <div class="link-group">
+                                        <a href="" class="btn-link">
+                                          View card
+                                        </a>
+
+                                        <a href="" class="btn-link remove">
+                                          Remove
+                                        </a>
+                                      </div>
+
+                                    </td>
+                                  </tr>
+                              
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5">
+                  <div class="member-card">
+                    <div class="member-card-header">
+                      <h3>Your Virtual Card for Group 1</h3>
+                    </div>
+                    <div class="member-card-body">
+                        <div class="member-profile">
+                          <div class="profile-img">
+                            <img src="assets/images/avatar-1.jpg" alt="">
+                          </div>
+                          <h3>John Doe</h3>
+                          <p>Worker</p>
+                         
+                        </div>
+
+                        <div class="member-details">
+                          <ul>
+                            <li><span class="txt-title">Group</span>Group1</li>
+                            <li><span class="txt-title">D.O.B</span>01/01/1999</li>
+                            <li><span class="txt-title">Issue</span>01/01/1999</li>
+                            <li><span class="txt-title">Expiry</span>01/01/1999</li>
+                            <li><span class="txt-title">Address</span>751 Green Hill Dr. Webster, 
+                              NY 14580
+                              <span class="qr-img">
+                                <img src="assets/images/qr-code.png" alt="">
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="member-action">
+                          <a href="#!" class="btn btn-white">Edit Your ID</a>
+                        </div>
+                        
+                    </div>
+
+                 
+
+                  </div>
+                </div>
+              </div>
+              <!-- end row -->
+        
+        
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+      <!-- end page content -->
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+
+$(document).ready(function(){
+  $('.btn-view').click(function(){
+    $(".grid-list").toggle();
+    $(".view-list").toggle();
+    $("span", this).toggle();
+  });
+
+  $('select').select2(
+      {
+        minimumResultsForSearch: -1,
+        width: 100,
+      }
+  );
+});
+
+  </script>
+</body>
+
+</html>
