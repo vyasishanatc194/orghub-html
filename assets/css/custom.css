@@ -87,10 +87,6 @@ a:focus {
   text-decoration: none;
 }
 
-p {
-  line-height: 32px;
-}
-
 ul,
 li {
   margin: 0;
@@ -102,16 +98,6 @@ fieldset {
   border: 0 none;
   margin: 0 auto;
   padding: 0;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .btn-link {
@@ -157,9 +143,9 @@ input[type="number"] {
   border-color: #5554d3;
   color: #fff;
   -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
+          transform: translateY(-3px);
   -webkit-box-shadow: 0 3px 15px 0 rgba(85, 84, 211, 0.4);
-  box-shadow: 0 3px 15px 0 rgba(85, 84, 211, 0.4);
+          box-shadow: 0 3px 15px 0 rgba(85, 84, 211, 0.4);
 }
 
 .btn.btn-primary:focus {
@@ -236,7 +222,7 @@ input[type="number"] {
 }
 
 .form-group .form-control {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   height: 46px;
   background-color: #fff;
   border-radius: 3px;
@@ -314,16 +300,16 @@ input[type="number"] {
 
 .dropdown-menu ul li .dropdown-item {
   background-color: #fafafa;
-  color: #5554D3;
+  color: #5554d3;
 }
 
 .dropdown-menu ul li .dropdown-item:hover {
-  background-color: #5554D3;
+  background-color: #5554d3;
   color: #fff;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #5554D3 !important;
+  background-color: #5554d3 !important;
   color: #fff;
 }
 
@@ -342,7 +328,7 @@ input[type="number"] {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  border: 1px solid #5554D3;
+  border: 1px solid #5554d3;
   height: 50px;
   background-color: #fff;
   border-radius: 4px;
@@ -358,17 +344,18 @@ input[type="number"] {
 }
 
 .flatpickr-day.today {
-  border-color: #5554D3 !important;
+  border-color: #5554d3 !important;
 }
 
-.flatpickr-day.today:hover, .flatpickr-day.today:focus {
-  border-color: #5554D3 !important;
-  background: #5554D3 !important;
+.flatpickr-day.today:hover,
+.flatpickr-day.today:focus {
+  border-color: #5554d3 !important;
+  background: #5554d3 !important;
   color: #fff;
 }
 
 .flatpickr-day:hover {
-  background: #EAEFFF !important;
+  background: #eaefff !important;
 }
 
 .menu-icon {
@@ -432,8 +419,8 @@ input[type="number"] {
   transition: all 0.3s;
 }
 
-/*###########################################################################
-############################## header section ###############################*/
+/* ###########################################################################
+############################## header section ############################### */
 .fixed-top {
   background-color: #fff;
   -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.02);
@@ -1238,12 +1225,12 @@ input[type="number"] {
 }
 
 .admin-header .admin-profile .user-profile .dropdown-menu a:hover {
-  background-color: #5554D3;
+  background-color: #5554d3;
   color: #fff;
 }
 
 .admin-header .admin-profile .user-profile .dropdown-menu a:active {
-  background-color: #5554D3;
+  background-color: #5554d3;
   color: #fff;
 }
 
@@ -2649,7 +2636,7 @@ middle sectio start here
 }
 
 .middle-section .id-global-details {
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 5px;
@@ -2700,7 +2687,7 @@ middle sectio start here
 
 .middle-section .listgroup .heading h2 {
   font-size: 24px;
-  color: #1B1B1B;
+  color: #1b1b1b;
   line-height: 28px;
 }
 
@@ -2723,7 +2710,7 @@ middle sectio start here
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 30px;
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   border-radius: 6px;
   margin-bottom: 10px;
 }
@@ -2752,7 +2739,7 @@ middle sectio start here
   display: block;
   white-space: nowrap;
   line-height: 30px;
-  color: #5554D3;
+  color: #5554d3;
   font-weight: 500;
 }
 
