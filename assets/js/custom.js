@@ -108,36 +108,36 @@ $("#toggle-read").click(function() {
 
 // our service
 
-$(".owl-carousel").owlCarousel({
-    loop:true,
-    margin:0,
-    smartSpeed:2000,
-    autoplay:true,
-    autoplayTimeout:4000,
-    autoplayHoverPause:true,
-    dots: false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        768:{
-            items:3,
-            nav:false
-        },
+// $(".owl-carousel").owlCarousel({
+//     loop:true,
+//     margin:0,
+//     smartSpeed:2000,
+//     autoplay:true,
+//     autoplayTimeout:4000,
+//     autoplayHoverPause:true,
+//     dots: false,
+//     responsiveClass:true,
+//     responsive:{
+//         0:{
+//             items:1,
+//             nav:true
+//         },
+//         768:{
+//             items:3,
+//             nav:false
+//         },
 
-        1000:{
-            items:3,
-            nav:true
-        },
-        1025:{
-            items:5,
-            nav:true,
-            loop:true
-        }
-    }
-});
+//         1000:{
+//             items:3,
+//             nav:true
+//         },
+//         1025:{
+//             items:5,
+//             nav:true,
+//             loop:true
+//         }
+//     }
+// });
 
 $(".nav-toggle").click(function(){
     $(".nav-toggle").removeClass("active");
