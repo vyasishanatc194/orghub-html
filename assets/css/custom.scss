@@ -352,6 +352,23 @@ input[type="number"] {
 
 // select end
 
+
+// flat picker
+
+.flatpickr-day.today {
+    border-color: #5554D3 !important;
+}
+
+.flatpickr-day.today:hover, .flatpickr-day.today:focus {
+    border-color: #5554D3 !important;
+    background: #5554D3 !important;
+    color: #fff;
+}
+
+.flatpickr-day:hover{
+	background: #EAEFFF !important;
+}
+
 .menu-icon {
 	display: inline-block;
 	width: 24px;
@@ -720,7 +737,6 @@ input[type="number"] {
 }
 
 .left-sidenav {
-	transition: all 0.5s ease-in-out;
 	position: fixed;
 	top: 100px;
 	left: 20px;
@@ -940,7 +956,7 @@ input[type="number"] {
 			background-color: #5554d3 !important;
 			box-shadow: none;
 			border: transparent;
-			position: absolute !important;
+			position: fixed !important;
 			z-index: 9999;
 		}
 	}
@@ -1824,6 +1840,13 @@ middle sectio start here
 				}
 			}
 
+			.row-5 {
+				margin: 0 -5px;
+				.pad-5 {
+					padding: 0 5px;
+				}
+			}
+
 			.box-group {
 				padding: 20px;
 				background-color: #fff;
@@ -2278,12 +2301,19 @@ middle sectio start here
 
 				ul {
 					li {
+						display: flex;
+						align-items: flex-start;
+
 						span.txt-title {
 							min-width: 80px;
 							text-align: right;
 							color: #809fff;
 							display: inline-block;
 							margin-right: 30px;
+						}
+
+						span.txt-info {
+							width: calc(100% - 80px);
 						}
 
 						font-size: 16px;
@@ -2297,7 +2327,6 @@ middle sectio start here
 			.qr-img {
 				display: block;
 				padding: 30px 30px 30px 0;
-				margin-left: 110px;
 				text-align: left;
 
 				img {
@@ -2425,6 +2454,104 @@ middle sectio start here
 			}
 		}
 	}
+
+	.id-global-details {
+		border: 1px solid #E8E8E8;
+		background-color: #fff;
+		padding: 30px 40px;
+		border-radius: 5px;
+
+		.id-profile {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 0 20px 0;
+
+			.id-user {
+				height: 136px;
+				width: 136px;
+				border-radius: 100px;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.id-qr-code {
+				height: 135px;
+				width: 135px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.id-info {
+			
+		}
+	}
+
+	.listgroup {
+		.heading {
+			margin-bottom: 30px;
+
+			h2 {
+				font-size: 24px;
+				color: #1B1B1B;
+				line-height: 28px;
+			}
+		}
+
+		ul {
+			display: block;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 100%;
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20px 30px;
+				border: 1px solid #E8E8E8;	
+				border-radius: 6px;
+				margin-bottom: 10px;
+
+				h3 {
+					font-size: 16px;
+					line-height: 19px;
+					font-weight: 800;
+					font-family: $didlot;
+					margin-bottom: 0;
+				}
+
+				span.view-card {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					
+					a {
+						display: block;
+						white-space: nowrap;
+						line-height: 30px;
+						color: #5554D3;
+						font-weight: 500;
+
+						span {
+							margin-right: 10px;
+							position: relative;
+							top: 6px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // #########################################################################
@@ -2476,6 +2603,7 @@ middle sectio start here
 	.left-sidenav.w-70 {
 		width: 100% !important;
 		left: 0;
+		transition: all 0.6s ease-in-out;
 	}
 
 	.sidemenu-open-main {
@@ -2640,6 +2768,48 @@ middle sectio start here
 						}
 					}
 				}
+
+				.id-global-details {
+					padding: 30px 20px;
+					margin-bottom: 30px;
+
+					.id-profile {
+
+						.id-user {
+							height: 100px;
+							width: 100px;
+						}
+
+						.id-qr-code {
+							height: 100px;
+							width: 100px;
+						}
+					}
+				}
+
+				.listgroup  {
+					ul {
+						li {
+							padding: 10px 20px;
+							flex-direction: column;
+							justify-content: flex-start;
+							align-items: flex-start;
+							
+							span.view-card {
+								width: 100%;
+								display: block;
+								font-size: 14px;
+
+								a {
+									width: 100%;
+									span {
+										font-size: 20px;
+									}
+								}
+							}
+						}
+					}
+				}
 			
 			}
 
@@ -2660,7 +2830,24 @@ middle sectio start here
 			}
 		}
 
-	
+		.member-card {
+			padding: 30px 20px;
+
+			.member-card-body {
+				.member-profile {
+					.profile-img {
+						height: 100px;
+						width: 100px;
+					}
+
+					h3 {
+						font-size: 20px;
+						line-height: 26px;
+					}
+				}
+			}
+			
+		}
 	}
 }
 
@@ -2777,6 +2964,7 @@ middle sectio start here
 		z-index: 9999;
 		min-height: 100%;
 		height: 100%;
+		transition: all 0.6s ease-in-out;
 		left: 0;
 		border-radius: 0;
 		top: 0;
@@ -2792,6 +2980,7 @@ middle sectio start here
 	.left-sidenav.w-70 {
 		width: 300px !important;
 		left: 0;
+
 	}
 
 	.sidemenu-open-main {

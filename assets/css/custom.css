@@ -357,6 +357,20 @@ input[type="number"] {
   width: 30px !important;
 }
 
+.flatpickr-day.today {
+  border-color: #5554D3 !important;
+}
+
+.flatpickr-day.today:hover, .flatpickr-day.today:focus {
+  border-color: #5554D3 !important;
+  background: #5554D3 !important;
+  color: #fff;
+}
+
+.flatpickr-day:hover {
+  background: #EAEFFF !important;
+}
+
 .menu-icon {
   display: inline-block;
   width: 24px;
@@ -768,8 +782,6 @@ input[type="number"] {
 }
 
 .left-sidenav {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   position: fixed;
   top: 100px;
   left: 20px;
@@ -1032,7 +1044,7 @@ input[type="number"] {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: transparent;
-  position: absolute !important;
+  position: fixed !important;
   z-index: 9999;
 }
 
@@ -1971,6 +1983,14 @@ middle sectio start here
   padding: 0 10px;
 }
 
+.middle-section .card-admin .card-body .row-5 {
+  margin: 0 -5px;
+}
+
+.middle-section .card-admin .card-body .row-5 .pad-5 {
+  padding: 0 5px;
+}
+
 .middle-section .card-admin .card-body .box-group {
   padding: 20px;
   background-color: #fff;
@@ -2462,6 +2482,12 @@ middle sectio start here
 }
 
 .middle-section .member-card .member-card-body .member-details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 15px;
@@ -2476,10 +2502,13 @@ middle sectio start here
   margin-right: 30px;
 }
 
+.middle-section .member-card .member-card-body .member-details ul li span.txt-info {
+  width: calc(100% - 80px);
+}
+
 .middle-section .member-card .member-card-body .qr-img {
   display: block;
   padding: 30px 30px 30px 0;
-  margin-left: 110px;
   text-align: left;
 }
 
@@ -2619,6 +2648,120 @@ middle sectio start here
      object-fit: contain;
 }
 
+.middle-section .id-global-details {
+  border: 1px solid #E8E8E8;
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 5px;
+}
+
+.middle-section .id-global-details .id-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 20px 0;
+}
+
+.middle-section .id-global-details .id-profile .id-user {
+  height: 136px;
+  width: 136px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.middle-section .id-global-details .id-profile .id-user img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.middle-section .id-global-details .id-profile .id-qr-code {
+  height: 135px;
+  width: 135px;
+}
+
+.middle-section .id-global-details .id-profile .id-qr-code img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.middle-section .listgroup .heading {
+  margin-bottom: 30px;
+}
+
+.middle-section .listgroup .heading h2 {
+  font-size: 24px;
+  color: #1B1B1B;
+  line-height: 28px;
+}
+
+.middle-section .listgroup ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.middle-section .listgroup ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.middle-section .listgroup ul li h3 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  font-family: "Didot";
+  margin-bottom: 0;
+}
+
+.middle-section .listgroup ul li span.view-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.middle-section .listgroup ul li span.view-card a {
+  display: block;
+  white-space: nowrap;
+  line-height: 30px;
+  color: #5554D3;
+  font-weight: 500;
+}
+
+.middle-section .listgroup ul li span.view-card a span {
+  margin-right: 10px;
+  position: relative;
+  top: 6px;
+}
+
 @media (max-width: 767px) {
   .left-sidenav {
     width: 100%;
@@ -2648,6 +2791,8 @@ middle sectio start here
   .left-sidenav.w-70 {
     width: 100% !important;
     left: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
   }
   .sidemenu-open-main {
     padding-left: 0 !important;
@@ -2772,6 +2917,42 @@ middle sectio start here
   .middle-section .card-admin .card-body .members-list table tr td:last-child {
     max-width: unset;
   }
+  .middle-section .card-admin .card-body .id-global-details {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+  .middle-section .card-admin .card-body .id-global-details .id-profile .id-user {
+    height: 100px;
+    width: 100px;
+  }
+  .middle-section .card-admin .card-body .id-global-details .id-profile .id-qr-code {
+    height: 100px;
+    width: 100px;
+  }
+  .middle-section .card-admin .card-body .listgroup ul li {
+    padding: 10px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .middle-section .card-admin .card-body .listgroup ul li span.view-card {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+  }
+  .middle-section .card-admin .card-body .listgroup ul li span.view-card a {
+    width: 100%;
+  }
+  .middle-section .card-admin .card-body .listgroup ul li span.view-card a span {
+    font-size: 20px;
+  }
   .middle-section .card-admin .card-footer {
     padding: 20px 20px;
   }
@@ -2790,6 +2971,17 @@ middle sectio start here
     padding: 8px 30px;
     width: 100%;
     margin: 0 2px;
+  }
+  .middle-section .member-card {
+    padding: 30px 20px;
+  }
+  .middle-section .member-card .member-card-body .member-profile .profile-img {
+    height: 100px;
+    width: 100px;
+  }
+  .middle-section .member-card .member-card-body .member-profile h3 {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -2884,6 +3076,8 @@ middle sectio start here
     z-index: 9999;
     min-height: 100%;
     height: 100%;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
     left: 0;
     border-radius: 0;
     top: 0;
