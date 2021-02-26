@@ -2131,6 +2131,7 @@ fieldset {
             color: rgba(27, 27, 27, 0.3);
             text-align: center;
             padding: 10px 20px;
+            white-space: nowrap;
 
             &:last-child {
               text-align: left;
@@ -2431,6 +2432,8 @@ fieldset {
     background-color: #fff;
     padding: 30px 40px;
     border-radius: 5px;
+    margin-bottom: 30px;
+    height: 100%;
 
     .id-profile {
       display: flex;

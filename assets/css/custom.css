@@ -2322,6 +2322,7 @@ fieldset {
   color: rgba(27, 27, 27, 0.3);
   text-align: center;
   padding: 10px 20px;
+  white-space: nowrap;
 }
 
 .middle-section .card-admin .card-body .members-list table th:last-child {
@@ -2630,6 +2631,8 @@ fieldset {
   background-color: #fff;
   padding: 30px 40px;
   border-radius: 5px;
+  margin-bottom: 30px;
+  height: 100%;
 }
 
 .middle-section .id-global-details .id-profile {
