@@ -873,7 +873,7 @@ fieldset {
 }
 
 .left-sidenav .nav-div {
-  padding: 0px 0 0 0;
+  padding: 0 0 0 0;
   position: relative;
   width: 100%;
 }
@@ -954,7 +954,6 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 22px;
   max-width: 22px;
   min-width: 60px;
   width: 100%;
@@ -969,7 +968,7 @@ fieldset {
 }
 
 .left-sidenav .nav-div .sidenav ul li a .icon-nav i {
-  color: #000000;
+  color: #000;
 }
 
 .left-sidenav .nav-div .sidenav ul li a .text-collaps-menu {
@@ -1233,9 +1232,9 @@ fieldset {
   color: #fff;
 }
 
-/*###########################################################################
+/* ###########################################################################
 ############################## media query started ###############################
-######################################################################################*/
+###################################################################################### */
 @media (max-width: 767px) {
   .header .navbar {
     padding: 8px 0;
@@ -1362,7 +1361,6 @@ fieldset {
     left: 0;
     background-color: rgba(28, 40, 58, 0.5);
     cursor: pointer;
-    z-index: 2;
     display: none;
     z-index: 99999;
   }
@@ -1479,7 +1477,6 @@ fieldset {
     left: 0;
     background-color: rgba(28, 40, 58, 0.5);
     cursor: pointer;
-    z-index: 2;
     display: none;
     z-index: 99999;
   }
@@ -1488,7 +1485,6 @@ fieldset {
     min-height: 100vh;
     width: 0;
     position: fixed;
-    z-index: 1;
     right: 0;
     top: 0;
     overflow-y: auto;
@@ -1534,14 +1530,12 @@ fieldset {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .header .navbar .collapse1 .navbar-nav .nav-item .nav-link {
     font-size: 12px;
-    line-height: 22x;
+    line-height: 22px;
     padding: 8px 10px;
     font-weight: 500;
   }
 }
 
-/* ----------- iPad Pro ----------- */
-/* Portrait and Landscape */
 /* Portrait */
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
   .header .navbar .collapse1 .navbar-nav .nav-item {
@@ -1555,7 +1549,6 @@ fieldset {
     left: 0;
     background-color: rgba(28, 40, 58, 0.5);
     cursor: pointer;
-    z-index: 2;
     display: none;
     z-index: 99999;
   }
@@ -1606,11 +1599,9 @@ fieldset {
   }
 }
 
-/*######################################################################
-
-middle sectio start here
-
-#################################################################### */
+/* ######################################################################
+###################### middle sectio start here #########################
+###################################################################### */
 .middle-authentication {
   background-color: #fafafa;
 }
@@ -1830,7 +1821,7 @@ middle sectio start here
   color: rgba(27, 27, 27, 0.3);
   font-weight: 600;
   margin-right: 60px;
-  padding: 12px 0px;
+  padding: 12px 0;
   font-weight: 600;
   border-bottom: 2px solid transparent;
 }
@@ -1958,7 +1949,7 @@ middle sectio start here
 
 .middle-section .card-admin .card-body {
   background-color: #fff;
-  padding: 0px 30px 30px 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .middle-section .card-admin .card-body .row-10 {
@@ -2229,11 +2220,11 @@ middle sectio start here
 
 .middle-section .card-admin .card-body .box-group-list table {
   border-collapse: separate;
-  border-spacing: 0px 10px;
+  border-spacing: 0 10px;
 }
 
 .middle-section .card-admin .card-body .box-group-list table tr {
-  border-spacing: 0px 0px;
+  border-spacing: 0 0;
 }
 
 .middle-section .card-admin .card-body .box-group-list table tr td {
@@ -2241,7 +2232,7 @@ middle sectio start here
   border-top: 1px solid rgba(191, 207, 255, 0.5);
   border-bottom: 1px solid rgba(191, 207, 255, 0.5);
   background-color: #fff;
-  border-radius: 0px;
+  border-radius: 0;
   margin: 0 auto;
   margin-bottom: 10px;
   font-size: 16px;
@@ -2251,14 +2242,14 @@ middle sectio start here
 }
 
 .middle-section .card-admin .card-body .box-group-list table tr td:last-child {
-  border-radius: 0px 8px 8px 0;
+  border-radius: 0 8px 8px 0;
   border-right: 1px solid rgba(191, 207, 255, 0.5);
   text-align: right;
   max-width: 100px;
 }
 
 .middle-section .card-admin .card-body .box-group-list table tr td:first-child {
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
   border-left: 1px solid rgba(191, 207, 255, 0.5);
 }
 
@@ -2320,7 +2311,7 @@ middle sectio start here
 
 .middle-section .card-admin .card-body .members-list table {
   border-collapse: separate;
-  border-spacing: 0px 10px;
+  border-spacing: 0 10px;
 }
 
 .middle-section .card-admin .card-body .members-list table th {
@@ -2338,7 +2329,7 @@ middle sectio start here
 }
 
 .middle-section .card-admin .card-body .members-list table tr {
-  border-spacing: 0px 0px;
+  border-spacing: 0 0;
 }
 
 .middle-section .card-admin .card-body .members-list table tr td {
@@ -2346,7 +2337,7 @@ middle sectio start here
   border-top: 1px solid rgba(191, 207, 255, 0.5);
   border-bottom: 1px solid rgba(191, 207, 255, 0.5);
   background-color: #fff;
-  border-radius: 0px;
+  border-radius: 0;
   margin: 0 auto;
   margin-bottom: 10px;
   font-size: 16px;
@@ -2357,14 +2348,14 @@ middle sectio start here
 }
 
 .middle-section .card-admin .card-body .members-list table tr td:last-child {
-  border-radius: 0px 8px 8px 0;
+  border-radius: 0 8px 8px 0;
   border-right: 1px solid rgba(191, 207, 255, 0.5);
   text-align: left;
   max-width: 100px;
 }
 
 .middle-section .card-admin .card-body .members-list table tr td:first-child {
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
   border-left: 1px solid rgba(191, 207, 255, 0.5);
   max-width: 100px;
 }
@@ -2843,10 +2834,10 @@ middle sectio start here
     width: 100%;
   }
   .middle-section .card-admin .card-header .action-groups ul {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups ul li .search-bar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups .search-bar {
     margin-bottom: 10px;
@@ -3017,10 +3008,10 @@ middle sectio start here
     width: 100%;
   }
   .middle-section .card-admin .card-header .action-groups ul {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups ul li .search-bar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups .search-bar {
     margin-bottom: 10px;
@@ -3121,10 +3112,10 @@ middle sectio start here
     width: 100%;
   }
   .middle-section .card-admin .card-header .action-groups ul {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups ul li .search-bar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .middle-section .card-admin .card-header .action-groups .search-bar {
     margin-bottom: 10px;
