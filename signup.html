@@ -15,7 +15,6 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <!-- cusotm CSS -->
   <link href="assets/css/custom.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-float-label.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -42,7 +41,6 @@
                       <h3>Sign Up</h3>
                     </div>
 
-
                     <form>
                       <div class="form-group  focus-none">
                         <label for="">Email</label>
@@ -57,8 +55,6 @@
                         <span class="invalid-feedback">Invalid Passowrd</span>
                       </div>
                    
-
-
                       <div class="form-group  focus-none">
                         <label for="">Password</label>
                           <div class="input-group">
@@ -89,9 +85,6 @@
                         <span class="invalid-feedback">Invalid Passowrd</span>
                       </div>
 
-
-                      
-
                       <div class="login-action">
                         <a href="#!" class="btn btn-primary btn-100">Sign Up</a>
                       </div>
@@ -112,22 +105,13 @@
       </div>
     </main>
 
-      <!-- end page content -->
-
-
-    
-
+    <!-- end page content -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/wow.js"></script>
-  <script src="assets/js/flatpickr.min.js"></script>
   <script src="assets/js/custom.js"></script>
-
-
   <script>
-
 
     flatpickr('.start-date', {
         disableMobile: "true",
@@ -139,12 +123,11 @@
   $('input').bind('blur', function(){
     $(this).parent().removeClass('focus-hover').addClass('focus-none');
   });
+
   $('input').bind('focus', function(){
     $(this).parent().removeClass('focus-none').addClass('focus-hover');
   });
 
- 
-  </script>
+</script>
 </body>
-
 </html>

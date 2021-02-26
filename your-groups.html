@@ -15,7 +15,7 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <!-- cusotm CSS -->
   <link href="assets/css/custom.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-float-label.css" rel="stylesheet">
+  
 </head>
 
 <body class="d-flex flex-column h-100 admin-page">
@@ -162,7 +162,6 @@
     <main role="main" class="flex-shrink-0 middle-section middle-admin dashboard sidemenu-open-main">
       <div class="middle-inner">
   
-       
         <section class="project-lisitng-section ">
           <div class="project-lisitng-inner">
             <div class="container-fluid">
@@ -848,12 +847,9 @@
                                 </div>
                                
                               </div>
-                             
                             </div>
-                           
                           </div>
                         </div>
-                        
                       </div>
                   
                     </div>
@@ -861,7 +857,6 @@
                 </div>
               </div>
               <!-- end row -->
-        
         
             </div>
           </div>
@@ -872,32 +867,20 @@
 
       <!-- end page content -->
 
-
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/wow.js"></script>
-  <script src="assets/js/select2.min.js"></script>
   <script src="assets/js/custom.js"></script>
-
   <script>
 
-$(document).ready(function(){
-  $('.btn-view').click(function(){
-    $(".grid-list").toggle();
-    $(".view-list").toggle();
-    $("span", this).toggle();
-  });
+    $(document).ready(function(){
+      $('.btn-view').click(function(){
+        $(".grid-list").toggle();
+        $(".view-list").toggle();
+        $("span", this).toggle();
+      });
+    });
 
-  $('select').select2(
-      {
-        minimumResultsForSearch: -1,
-        width: 100,
-      }
-  );
-});
-
-  </script>
+</script>
 </body>
-
 </html>

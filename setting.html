@@ -15,7 +15,6 @@
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <!-- cusotm CSS -->
   <link href="assets/css/custom.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-float-label.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/switch.css">
   <link rel="stylesheet" href="assets/css/flatpickr.min.css">
   
@@ -370,9 +369,7 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/wow.js"></script>
-  <script src="assets/js/select2.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/flatpickr.min.js"></script>
 
@@ -384,14 +381,6 @@ $(document).ready(function(){
     $(".view-list").toggle();
     $("span", this).toggle();
   });
-
-  $('select').select2(
-      {
-        minimumResultsForSearch: -1,
-        width: 100,
-      }
-  );
-
 
   var dobdate;
   dobdate = flatpickr(".dobdate",{
@@ -431,7 +420,6 @@ $(document).ready(function(){
     });
 });
 
-  </script>
+</script>
 </body>
-
 </html>
