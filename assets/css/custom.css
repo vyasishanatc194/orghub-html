@@ -2742,7 +2742,237 @@ fieldset {
   top: 6px;
 }
 
+.card-org {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.card-org .card-org-header {
+  background-color: #5554D3;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+.card-org .card-org-header .card-logo {
+  border-right: 3px dotted #fff;
+}
+
+.card-org .card-org-header .card-logo img {
+  width: 250px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: 3px;
+}
+
+.card-org .card-org-header .card-info {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.card-org .card-org-header .card-info h3 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.card-org .card-org-header .card-info h4 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.card-org .card-org-body {
+  border-radius: 0 0 25px 25px;
+  background-color: #F2F2F2;
+  background-image: url(../images/thumb.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20px 20px 10px 20px;
+  min-height: 200px;
+}
+
+.card-org .card-org-body .row-5 {
+  margin: 0 -5px;
+}
+
+.card-org .card-org-body .row-5 .pad-5 {
+  padding: 0 5px;
+}
+
+.card-org .card-org-body .card-profile {
+  text-align: center;
+}
+
+.card-org .card-org-body .card-profile img {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-org .card-org-body .card-org-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-org .card-org-body .card-org-detail .form-group {
+  margin-bottom: 5px;
+}
+
+.card-org .card-org-body .card-org-detail .form-group label {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.card-org .card-org-body .card-org-detail .form-group p {
+  font-weight: 800 !important;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.card-org .card-org-body .card-org-detail .group-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-org .card-org-body .card-org-detail .group-date .form-group {
+  margin-right: 10px;
+}
+
+.card-org .card-org-body .card-org-detail .group-date label {
+  font-size: 10px !important;
+}
+
+.card-org .card-org-body .card-org-detail .group-date p {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.card-org .card-org-body .card-org-detail .qr-code {
+  max-width: 110px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.card-org .card-org-body .card-org-detail .qr-code img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 767px) {
+  .card-org .card-org-header {
+    height: 70px;
+  }
+  .card-org .card-org-header .card-logo {
+    border-right: 3px dotted #fff;
+  }
+  .card-org .card-org-header .card-logo img {
+    width: 110px;
+  }
+  .card-org .card-org-header .card-info {
+    padding: 5px 8px;
+    width: 100%;
+  }
+  .card-org .card-org-header .card-info h3 {
+    font-size: 18px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .card-org .card-org-header .card-info h4 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .card-org .card-org-body {
+    background-size: 100%;
+    padding: 10px 10px 5px 10px;
+    min-height: 200px;
+    background-size: cover;
+  }
+  .card-org .card-org-body .card-profile {
+    max-width: 120px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .card-org .card-org-body .card-org-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-org .card-org-body .card-org-detail .form-group label {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .form-group p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-org .card-org-body .card-org-detail .group-date .form-group {
+    margin-right: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .group-date label {
+    font-size: 9px !important;
+  }
+  .card-org .card-org-body .card-org-detail .group-date p {
+    font-size: 13px !important;
+    line-height: 16px !important;
+  }
+  .card-org .card-org-body .card-org-detail .qr-code {
+    max-width: 110px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .qr-code img {
+    width: 100%;
+    height: auto;
+  }
   .left-sidenav {
     width: 100%;
     z-index: 9999;
@@ -2975,6 +3205,10 @@ fieldset {
   .middle-section .card-admin .card-body .members-list table tr td:last-child {
     max-width: unset;
   }
+  .card-org .card-org-header .card-info h3 {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -3047,6 +3281,29 @@ fieldset {
     padding: 8px 30px;
     width: 100%;
     margin: 0 2px;
+  }
+  .middle-section .card-org .card-org-header .card-logo {
+    border-right: 3px dotted #fff;
+  }
+  .middle-section .card-org .card-org-header .card-logo img {
+    width: 180px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    top: 3px;
+  }
+  .middle-section .card-org .card-org-header .card-info {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .middle-section .card-org .card-org-header .card-info h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .middle-section .card-org .card-org-header .card-info h4 {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -3151,6 +3408,157 @@ fieldset {
     padding: 8px 30px;
     width: 100%;
     margin: 0 2px;
+  }
+}
+
+@media (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .card-org .card-org-header {
+    height: 70px;
+  }
+  .card-org .card-org-header .card-logo {
+    border-right: 3px dotted #fff;
+  }
+  .card-org .card-org-header .card-logo img {
+    width: 140px;
+  }
+  .card-org .card-org-header .card-info {
+    padding: 5px 8px;
+    width: 100%;
+  }
+  .card-org .card-org-header .card-info h3 {
+    font-size: 20px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .card-org .card-org-header .card-info h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .card-org .card-org-header {
+    height: 70px;
+  }
+  .card-org .card-org-header .card-logo {
+    border-right: 3px dotted #fff;
+  }
+  .card-org .card-org-header .card-logo img {
+    width: 140px;
+  }
+  .card-org .card-org-header .card-info {
+    padding: 5px 8px;
+    width: 100%;
+  }
+  .card-org .card-org-header .card-info h3 {
+    font-size: 20px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .card-org .card-org-header .card-info h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .card-org .card-org-body {
+    background-size: 100%;
+    padding: 10px 10px 5px 10px;
+    min-height: 200px;
+    background-size: cover;
+  }
+  .card-org .card-org-body .row-5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-org .card-org-body .row-5 .pad-5 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .card-org .card-org-body .card-profile {
+    max-width: 120px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .card-org .card-org-body .card-org-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-org .card-org-body .card-org-detail .form-group label {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .form-group p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card-org .card-org-body .card-org-detail .group-date .form-group {
+    margin-right: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .group-date label {
+    font-size: 9px !important;
+  }
+  .card-org .card-org-body .card-org-detail .group-date p {
+    font-size: 13px !important;
+    line-height: 16px !important;
+  }
+  .card-org .card-org-body .card-org-detail .qr-code {
+    max-width: 110px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .card-org .card-org-body .card-org-detail .qr-code img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .card-org .card-org-header {
+    height: 70px;
+  }
+  .card-org .card-org-header .card-logo {
+    border-right: 3px dotted #fff;
+  }
+  .card-org .card-org-header .card-logo img {
+    width: 120px;
+  }
+  .card-org .card-org-header .card-info {
+    padding: 5px 8px;
+    width: 100%;
+  }
+  .card-org .card-org-header .card-info h3 {
+    font-size: 20px;
+    line-height: 25px;
+    white-space: nowrap;
+  }
+  .card-org .card-org-header .card-info h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .card-org .card-org-body .row-5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-org .card-org-body .row-5 .pad-5 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 /*# sourceMappingURL=custom.css.map */

@@ -2525,6 +2525,147 @@ fieldset {
       }
     }
   }
+
+
+}
+
+.card-org {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  overflow: hidden;
+ 
+
+  .card-org-header {
+    background-color: #5554D3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+
+    .card-logo {
+      border-right: 3px dotted #fff;
+      img {
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+        position: relative;
+        top: 3px;
+      }
+    }
+
+    .card-info {
+      padding: 10px 20px;
+      width: 100%;
+
+      h3 {
+        font-size: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 22px;
+        line-height: 26px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card-org-body {
+    border-radius: 0 0 25px 25px;
+    background-color: #F2F2F2;
+    background-image: url(../images/thumb.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px 20px 10px 20px;
+    min-height: 200px;
+
+    .row-5 {
+      margin: 0 -5px;
+
+      .pad-5 {
+        padding: 0 5px;
+      }
+    }
+
+    .card-profile{
+      text-align: center;
+      img {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .card-org-detail {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+     
+      
+
+      .form-group {
+        margin-bottom: 5px;
+
+        label {
+           font-size: 12px;
+           line-height: 12px;
+           font-weight: 600;
+           color: #000; 
+           margin-bottom: 5px;
+        }
+
+        p {
+          font-weight: 800 !important;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000;
+          margin-bottom: 5px;
+        }
+      }
+
+      .group-date {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .form-group {
+          margin-right: 10px;
+        }
+        label {
+          font-size: 10px !important;
+        }
+
+        p {
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+
+      .qr-code {
+        max-width: 110px;
+        height: auto;
+        margin-top: 10px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
 
 // #########################################################################
@@ -2532,6 +2673,95 @@ fieldset {
 // #########################################################################
 
 @media (max-width: 767px) {
+
+
+  .card-org {
+    .card-org-header {
+      height: 70px;
+
+      .card-logo {
+        border-right: 3px dotted #fff;
+        img {
+          width: 110px;
+        }
+      }
+  
+      .card-info {
+        padding: 5px 8px;
+        width: 100%;
+  
+        h3 {
+          font-size: 18px;
+          line-height: 25px;
+          white-space: nowrap;
+        }
+  
+        h4 {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  
+    .card-org-body {
+      background-size: 100%;
+      padding: 10px 10px 5px 10px;
+      min-height: 200px;
+      background-size: cover;
+
+      .card-profile {
+        max-width: 120px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+      
+      .card-org-detail {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+  
+        .form-group {
+   
+  
+          label {
+             font-size: 10px;
+             line-height: 10px;
+          }
+  
+          p {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+  
+        .group-date {
+          .form-group {
+            margin-right: 10px;
+          }
+          label {
+            font-size: 9px !important;
+          }
+  
+          p {
+            font-size: 13px !important;
+            line-height: 16px !important;
+          }
+        }
+  
+        .qr-code {
+          max-width: 110px;
+          height: auto;
+          margin-top: 10px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  
   .left-sidenav {
     width: 100%;
     z-index: 9999;
@@ -2838,6 +3068,11 @@ fieldset {
       }
     }
   }
+
+  .card-org .card-org-header .card-info h3 {
+    font-size: 34px;
+    line-height: 42px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -2915,10 +3150,55 @@ fieldset {
         }
       }
     }
+
+
+    .card-org {
+   
+   
+  
+      .card-org-header {
+    
+    
+        .card-logo {
+          border-right: 3px dotted #fff;
+          img {
+            width: 180px;
+            height: auto;
+            object-fit: cover;
+            position: relative;
+            top: 3px;
+          }
+        }
+    
+        .card-info {
+          padding: 10px 20px;
+          width: 100%;
+    
+          h3 {
+            font-size: 35px;
+            line-height: 40px;
+        
+          }
+    
+          h4 {
+            font-size: 20px;
+            line-height: 25px;
+           
+          }
+        }
+      }
+    
+   
+    }
   }
+  
+ 
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+  
+
   .admin-header {
     .admin-profile {
       .user-profile {
@@ -3033,6 +3313,184 @@ fieldset {
             width: 100%;
             margin: 0 2px;
           }
+        }
+      }
+    }
+  }
+}
+
+
+@media only (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+
+  .card-org {
+    .card-org-header {
+      height: 70px;
+
+      .card-logo {
+        border-right: 3px dotted #fff;
+        img {
+          width: 140px;
+        }
+      }
+  
+      .card-info {
+        padding: 5px 8px;
+        width: 100%;
+  
+        h3 {
+          font-size: 20px;
+          line-height: 25px;
+          white-space: nowrap;
+        }
+  
+        h4 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  
+ 
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+  .card-org {
+    .card-org-header {
+      height: 70px;
+
+      .card-logo {
+        border-right: 3px dotted #fff;
+        img {
+          width: 140px;
+        }
+      }
+  
+      .card-info {
+        padding: 5px 8px;
+        width: 100%;
+  
+        h3 {
+          font-size: 20px;
+          line-height: 25px;
+          white-space: nowrap;
+        }
+  
+        h4 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .card-org {
+   
+    .card-org-body {
+      background-size: 100%;
+      padding: 10px 10px 5px 10px;
+      min-height: 200px;
+      background-size: cover;
+
+      .row-5 {
+        flex-direction: column;
+        .pad-5 {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+
+      .card-profile {
+        max-width: 120px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+      }
+      
+      .card-org-detail {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+  
+        .form-group {
+   
+  
+          label {
+             font-size: 10px;
+             line-height: 10px;
+          }
+  
+          p {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+  
+        .group-date {
+          .form-group {
+            margin-right: 10px;
+          }
+          label {
+            font-size: 9px !important;
+          }
+  
+          p {
+            font-size: 13px !important;
+            line-height: 16px !important;
+          }
+        }
+  
+        .qr-code {
+          max-width: 110px;
+          height: auto;
+          margin-top: 10px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .card-org {
+    .card-org-header {
+      height: 70px;
+
+      .card-logo {
+        border-right: 3px dotted #fff;
+        img {
+          width: 120px;
+        }
+      }
+  
+      .card-info {
+        padding: 5px 8px;
+        width: 100%;
+  
+        h3 {
+          font-size: 20px;
+          line-height: 25px;
+          white-space: nowrap;
+        }
+  
+        h4 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    .card-org-body {
+      .row-5 {
+        flex-direction: column;
+        .pad-5 {
+          max-width: 100%;
+          flex: 0 0 100%;
         }
       }
     }
